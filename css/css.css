@@ -53,9 +53,15 @@ body{
    font-size: 14px;
 }
 .submit{
+   border-radius: 10px;
+   border: solid 1px;
+   width: 80px;
+   height: 30px;
    text-align: center;
    margin-top: 7%;
    margin-bottom: 7%;
+   line-height: 30px;
+   cursor: pointer;
 }
 .footer{
  background-image: url("../images/footer.jpg");
@@ -68,6 +74,22 @@ body{
  text-align: center;
  color: white;
  padding-top: 5%;
+}
+.gxy{
+   display: none;
+   width: 200px;
+   height: 80px;
+   background-color: #ee827c;
+   border-radius: 10px;
+   text-align: center;
+   line-height: 30px;
+}
+.gxy div{
+   width: 50px;
+   border: solid 1px;
+   border-radius: 10px;
+   margin-top: 5px;
+   cursor: pointer;
 }
 
 

@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/css.css">
-  <title>Document</title>
+  <title>中传微提案</title>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jsv1.1.7/bmob-min.js"></script>
+  <!-- <script type="text/javascript" src="js/main.js"></script> -->
+  <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
   <div class="header">
@@ -22,34 +26,34 @@
       </div>
       <div class="clearfix">
 		  <div class="up">
-			  <label for="username">学院</label>
+			  <label for="xueyuan">学院</label>
 		  </div>
 		  <div class="down">
-			  <input type="text" name="username" id="username">
+			  <input type="text" name="xueyuan" id="xueyuan">
 		  </div>
       </div>
       <div class="clearfix">
 		  <div class="up">
-			  <label for="username">专业</label>
+			  <label for="zhuanye">专业</label>
 		  </div>
 		  <div class="down">
-			  <input type="text" name="username" id="username">
+			  <input type="text" name="zhuanye" id="zhuanye">
 		  </div>
       </div>
       <div class="clearfix">
 		  <div class="up">
-			  <label for="username">联系方式</label>
+			  <label for="phone">联系方式</label>
 		  </div>
 		  <div class="down">
-			  <input type="text" name="username" id="username">
+			  <input type="text" name="phone" id="phone">
 		  </div>
       </div>
       <div class="clearfix">
 		  <div class="up">
-			  <label for="username">附议人</label>
+			  <label for="fuyiren">附议人</label>
 		  </div>
 		  <div class="down">
-			  <input type="text" name="username" id="username">
+			  <input type="text" name="fuyiren" id="fuyiren">
 		  </div>
       </div>
 	  <div class="clearfix">
@@ -58,16 +62,16 @@
 				</div>
 				<div class="down" id="select">
 					<select>
-						<option value="1">请选择类别</option>
-						<option>保卫处提案</option>
-						<option>教务处提案</option>
-						<option>后勤相关提案</option>
-						<option>图书馆提案</option>
-						<option>团委提案</option>
-						<option>网络中心提案</option>
-						<option>校医院提案</option>
-						<option>校园建设提案</option>
-						<option>其他</option>
+						<option value="">请选择类别</option>
+						<option value="保卫处提案">保卫处提案</option>
+						<option value="教务处提案">教务处提案</option>
+						<option value="后勤相关提案">后勤相关提案</option>
+						<option value="图书馆提案">图书馆提案</option>
+						<option value="团委提案">团委提案</option>
+						<option value="网络中心提案">网络中心提案</option>
+						<option value="校医院提案">校医院提案</option>
+						<option value="校园建设提案">校园建设提案</option>
+						<option value="其他">其他</option>
 					</select>
 				</div>
 	   </div>
@@ -81,30 +85,36 @@
 	   </div>
 	   <div class="clearfix">
 				<div class="up">
-					<label for="intro">提案内容</label>
+					<label for="intro-content">提案内容</label>
 				</div>
 				<div class="down">
-					<textarea rows="5" cols="45" id="intro"></textarea>
+					<textarea rows="5" cols="45" id="intro-content"></textarea>
 				</div>
 	   </div>
 	   <div class="clearfix">
 				<div class="up">
-					<label for="intro">提案理由</label>
+					<label for="intro-liyou">提案理由</label>
 				</div>
 				<div class="down">
-					<textarea rows="5" cols="45" id="intro"></textarea>
+					<textarea rows="5" cols="45" id="intro-liyou"></textarea>
 				</div>
 	   </div>
 	   <div class="clearfix">
 				<div class="up">
-					<label for="intro">备注</label>
+					<label for="intro-beizhu">备注</label>
 				</div>
 				<div class="down">
-					<textarea rows="3" cols="45" id="intro"></textarea>
+					<textarea rows="3" cols="45" id="intro-beizhu"></textarea>
 				</div>
 	   </div>
-	   <div class="submit">
-	   	  <input type="submit" value="提交">
+	   <div class="gxy">
+	   		<p>提交成功</p>
+	   		<div class="queren">确认</div>
+
+	   </div>
+	   <div class="submit" id="btn">
+	   	  <!-- <button id="btn">提交</button> -->
+	   	  <p>提交</p>
 	   </div>
   </form>
   </div>
